@@ -21,7 +21,7 @@ public class SearchServlet extends HttpServlet {
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection conn = ConnectionUtil.getConnection("localhost", "root", "123456", "webapp", "3306");
+                Connection conn = ConnectionUtil.getConnection("localhost", "root", "12345678", "webapp", "3306");
 
                 Statement st = conn.createStatement();
                 String sql = "SELECT product_name, product_price FROM products WHERE product_name='" + product_name + "'";
